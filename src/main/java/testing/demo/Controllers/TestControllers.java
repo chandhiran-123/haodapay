@@ -8,6 +8,6 @@ public class TestControllers {
 	
 	@GetMapping("/index")
 	private String pubilc() {
-		return "hlo world";
+		return "hlo world chandhiran";
 	}
 }
