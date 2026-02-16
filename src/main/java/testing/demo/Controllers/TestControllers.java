@@ -8,7 +8,7 @@ public class TestControllers {
 	
 	@GetMapping("/index")
 	private String pubilc() {
-		return "Hi Chandhiran";
+		return "Hi Chandhiran git push successfully";
 	}
 	
 }
