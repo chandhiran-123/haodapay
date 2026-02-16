@@ -8,7 +8,7 @@ public class TestControllers {
 	
 	@GetMapping("/index")
 	private String pubilc() {
-		return "Hi Chandhiran git push successfully";
+		return "Hi Chandhiran git push successfully with consent of Santhosh Anna";
 	}
 	
 }
