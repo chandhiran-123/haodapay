@@ -29,8 +29,9 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd home/haodapay
+            cd /home/ubuntu/home/haodapay
             git pull origin Test
             mvn clean package
-            pkill -f 'java -jar'
-            nohup java -jar target/*.jar > app.log 2>&1 &
+            pkill -f demo-0.0.1-SNAPSHOT.jar
+            nohup java -jar target/demo-0.0.1-SNAPSHOT.jar > app.log 2>&1 &
+
