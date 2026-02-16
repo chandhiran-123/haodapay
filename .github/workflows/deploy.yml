@@ -32,6 +32,8 @@ jobs:
             cd /home/ubuntu/home/haodapay
             git pull origin Test
             mvn clean package
-            pkill -f demo-0.0.1-SNAPSHOT.jar
+            pkill -f demo-0.0.1-SNAPSHOT.jar || true
+            sleep 2
             nohup java -jar target/demo-0.0.1-SNAPSHOT.jar > app.log 2>&1 &
+
 
